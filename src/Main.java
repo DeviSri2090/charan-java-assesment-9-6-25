@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Choose a shape (1. Circle or 2. Rectangle): ");
+        System.out.println("Choose a shape (1. Circle (or) 2. Rectangle): ");
         int choice = scanner.nextInt();
 
-        Shape shape = null;
+        Shape newshape = null;
 
         switch (choice) {
             case 1:
@@ -28,12 +28,12 @@ public class Main {
             default:
                 System.out.println("Invalid choice. Exiting.");
                 scanner.close();
-                return; // Terminate the program
+                return; 
         }
 
-        System.out.println("Shape: " + shape.getName());
-        System.out.println("Area: " + shape.area());
-        System.out.println("Perimeter: " + shape.perimeter());
+        System.out.println("Shape: " + newshape.getName());
+        System.out.println("Area: " + newshape.area());
+        System.out.println("Perimeter: " + newshape.perimeter());
 
         scanner.close();
     }
