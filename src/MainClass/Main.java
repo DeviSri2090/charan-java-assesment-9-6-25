@@ -29,7 +29,11 @@ public class Main {
             default:
                 System.out.println("Invalid choice. Exiting.");
                 scanner.close();
+<<<<<<< HEAD:src/MainClass/Main.java
                 return;
+=======
+                return; 
+>>>>>>> 35c0480d18d4457a8f8d9350ad4aeda3f9f6fd36:src/Main.java
         }
 
         System.out.println("Shape: " + newshape.getName());
