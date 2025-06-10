@@ -7,17 +7,12 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
-    @Override
     public double area() {
         return Math.PI * radius * radius;
     }
-
-    @Override
     public double perimeter() {
         return 2 * Math.PI * radius;
     }
-
-    @Override
     public String getName() {
         return "Circle";
     }
